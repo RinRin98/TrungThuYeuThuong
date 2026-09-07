@@ -104,6 +104,50 @@
     td.qty{width:auto;font-size:17px}
     th,td{padding:11px 12px}
     .close p{font-size:19px}
+	  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr{
+    display:block;
+  }
+
+  thead{
+    display:none;
+  }
+
+  tbody tr{
+    background:#fff;
+    border:1px solid var(--paper-2);
+    border-radius:12px;
+    margin-bottom:16px;
+    padding:14px;
+  }
+
+  tbody td{
+    border:none;
+    padding:8px 0;
+  }
+
+  tbody td::before{
+    display:block;
+    font-weight:600;
+    color:var(--night);
+    margin-bottom:4px;
+  }
+
+  tbody td:nth-child(1)::before{
+    content:"Số lượng";
+  }
+
+  tbody td:nth-child(2)::before{
+    content:"Hiện vật";
+  }
+
+  tbody td:nth-child(3)::before{
+    content:"Ghi chú";
+  }
   }
 </style>
 </head>
@@ -200,7 +244,7 @@
         <tr><td class="qty">600</td><td>Lồng đèn</td><td>Loại cầm tay được</td></tr>
         <tr><td class="qty">600</td><td>Bánh trung thu thập cẩm 1 trứng</td><td>200g, hạn dùng sau 27/9</td></tr>
         <tr><td class="qty">1.800 – 3.500</td><td>Vở 5 ô li</td><td>Giấy 70gsm trở lên<small>Mỗi bé 3–6 quyển tuỳ nguồn nhận được</small></td></tr>
-        <tr><td class="qty">900 – 1.400</td><td>Bút gel nước màu xanh</td><td>Mỗi bé 2 cây</td></tr>
+        <tr><td class="qty">900 – 1.400</td><td>Bút gel nước màu xanh</td><td>Mỗi bé 2-5 cây</td></tr>
         <tr><td class="qty">1.000</td><td>Bút chì</td><td></td></tr>
         <tr><td class="qty">350</td><td>Giấy in ảnh</td><td>Cho góc chụp ảnh chân dung</td></tr>
         <tr><td class="qty">Có bao nhiêu góp bấy nhiêu</td><td>Đồ dùng học tập khác</td><td>Thước, gôm, chuốt chì, bút chì màu, bảng đen…</td></tr>
