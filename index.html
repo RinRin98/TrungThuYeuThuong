@@ -117,25 +117,42 @@
     display:none;
   }
 
-  tbody tr{
-    background:#fff;
-    border:1px solid var(--paper-2);
-    border-radius:12px;
-    margin-bottom:16px;
-    padding:14px;
-  }
+tbody tr{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--paper-2);
+  border-radius:12px;
+  margin-bottom:18px;
+  padding:14px;
+}
+
+tbody tr:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  left:20px;
+  right:20px;
+  bottom:-10px;
+  border-bottom:2px dashed #B8C1E3;
+}
 
   tbody td{
-    border:none;
-    padding:8px 0;
-  }
+  border:none;
+  padding:10px 0;
+}
 
-  tbody td::before{
-    display:block;
-    font-weight:600;
-    color:var(--night);
-    margin-bottom:4px;
-  }
+
+tbody tr:last-child{
+  margin-bottom:0;
+}
+
+ tbody td::before{
+  display:block;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#7D839B;
+  margin-bottom:6px;
+}
 
   tbody td:nth-child(1)::before{
     content:"Số lượng";
